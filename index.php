@@ -10,9 +10,17 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+        <!-- OpenGraph -->
         <meta property="og:title" content="Life and Liberty">
         <meta property="og:url" content="http://www.deseretnews.com/interactive/2014/life-liberty">
         <meta property="og:image" content="http://www.deseretnews.com/interactive/2014/life-liberty/assets/images/liberty-900.jpg" />
+
+
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary"></meta>
+        <meta name="twitter:site" content="@deseretnews"></meta>
+        <meta name="twitter:creator" content="@loisco"></meta>
+        
         <meta http-equiv="X-UA-Compatible" content="IE=9">
         <meta property="vr:type" content="article">
         <meta property="vr:category" content="family">

@@ -41,7 +41,7 @@ define(function(require) {
     $('.js-video').hide();
 
     $(document).ready(function() {
-        jwplayer.key="LlndKwlrLnYKFFe8QruXI59jV9BvvgGFy6Nr1A==";
+        jwplayer.key="";
         var pwidget_config = { defaults: { afterShare: false } };
 
         /**
