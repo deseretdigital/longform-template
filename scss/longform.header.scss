@@ -1,0 +1,97 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: RGBA(11,22,33,0.7);
+    z-index: 2;
+    .masthead {
+        margin: auto;
+        font-size: 0;
+        height: 23px;
+        padding: 10px;
+        max-width: 64rem;
+        img {
+            max-height: 100%;
+        }
+        position: relative;
+        @media (max-width: 650px) {
+            width: 100%;
+            padding: 8px;
+        }
+        @media (max-width: 370px) {
+            height: 22px;
+        }
+        .chapters {
+            position: absolute;
+            right: 16px;
+            top: 7px;
+            font-size: 14pt;
+            @media (max-width: 650px) {
+                font-size: 12pt;
+                right: 18px;
+            }
+            .chapter {
+                background: #222;
+                color: white;
+                border-radius: 2px;
+                display: inline-block;
+                padding: .15em .5em;
+                margin: 0 .15em;
+                background: RGBA(225,225,225,0.6);
+                color: #444;
+                font-weight: 400;
+                overflow: hidden;
+                text-decoration: none;
+                &:hover {
+                    background: RGBA(255,255,255,0.9);
+                    cursor: pointer;
+                    .title {
+                        border-left: 1px solid #ddd;
+                    }
+                }
+                .title {
+                    font-variant: small-caps;
+                    display: inline-block;
+                    margin-left: 1em;
+                    padding-left: 1em;
+                    font-weight: 400;
+                    width: 0;
+                    font-size: 0;
+                    border-left: 1px solid white;
+                    -webkit-transition: width .5s;
+                    text-wrap: none !important;
+                    white-space: nowrap;
+                }
+                .number {
+                    display: inline-block;
+                }
+                @media (max-width: 370px) {
+                    margin: 0 .05em;
+                }
+                @media (max-width: 350px) {
+                    display: none;
+                }
+            }
+            @media (min-width: 650px) {
+                .active-chapter {
+                    .title {
+                        font-size: inherit;
+                        width: auto;
+                        max-width: 200px;
+                        width: 200px;
+                        border-left: 0;
+                        text-align: center;
+                        padding-left: 0;
+                        margin-left: 0;
+                    }
+                    &:hover .title {
+                        border-left: 0;
+                    }
+                    .number {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
