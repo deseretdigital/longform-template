@@ -137,6 +137,28 @@
         max-width: 100%;
         margin: 2rem;
     }
+}
 
+.pull-quote {
+    &.inline {
+        font-size: 2rem;
+        &.inline-right {
+            float: right;
+            width: 18rem;
+            text-align: right;
+        }
+        &::before {
+            content: open-quote;
+            float: left;
+            margin-right: .25rem;
+        }
+        p:last-child::after {
+            content: close-quote;
+        }
+        .attribution::before {
+            content: "\2014\00A0";
+        }
 
+    }
+    quotes: "\201C""\201D""\2018""\2019";
 }

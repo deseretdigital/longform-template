@@ -22,13 +22,6 @@ gulp.task('watch', function(event) {
     gulp.watch('scss/*.scss', ['sass']);
 });
 
-gulp.task('server', shell.task([
-        'APPLICATION_ENV=dev php -d variables_order=EGPCS -S dev.cougarfan.com:8000'
-    ],{
-        cwd: './web'
-    }
-));
-
 gulp.task('build', ['bower', 'sass']);
 
-gulp.task('default', ['sass', 'watch', 'server']);
+gulp.task('default', ['sass', 'watch']);
