@@ -27,4 +27,4 @@ Installs to node_modules/
 
 ## examples
 
-[2014-11-11: Life & Liberty](http://www.deseretnews.com/interactive/2014/life-liberty/)
+2014-11-11: [Life & Liberty](http://www.deseretnews.com/interactive/2014/life-liberty/), **Deseret News**
