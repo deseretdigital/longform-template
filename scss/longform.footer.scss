@@ -1,0 +1,123 @@
+footer {
+    min-width: 100%;
+    padding: 1rem 0;
+    background-color: #dddddd;
+    font-family: arial,helvetica,sans-serif;
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+    .series-promo {
+        padding-top: 1rem;
+        p {
+            margin: .5rem 0;
+        }
+        h2.hammer {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+    }
+    .series-promo-entry {
+        border-right: 0;
+        width: auto;
+        .series-promo-entry-thumbnail {
+            float: left;
+            padding-right: 1rem;
+        }
+        .overline {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .hammer {
+            font-size: 1.5rem;
+        }
+    }
+    .series-promo-description, .series-promo-title {
+        padding: 0 1rem;
+    }
+    .series-promo-description, .series-promo-entry {
+        font-size: 1.25rem;
+    }
+
+    @media (max-width: 600px) {
+        .series-promo .series-promo-entry {
+            padding: 1rem;
+        }
+        .series-promo .series-promo-entry-description {
+            clear: both;
+            padding-top: .5rem;
+            margin: 0;
+        }
+    }
+
+    @media (min-width: 800px) {
+
+        .series-promo {
+            font-size: 0;
+            padding: 1rem 0;
+            margin: 0 auto;
+            max-width: 780px;
+        }
+        .series-promo-entry, footer .series-promo-description {
+            font-size: .95rem;
+        }
+        .series-promo .series-promo-entry-thumbnail {
+            margin-bottom: .5rem;
+            display: block;
+            float: none;
+        }
+        .series-promo .series-promo-entry:first-of-type {
+            margin-left: 0;
+        }
+        .series-promo .series-promo-entry {
+            max-width: 225px;
+            padding: 1rem;
+            margin: 0;
+            border-right: 1px solid;
+        }
+        .series-promo-entry-description {
+            margin: 0;
+            clear: none;
+            padding-top: 0;
+        }
+        .series-promo .series-promo-entry .hammer {
+            font-size: 1.1rem;
+        }
+        .hidden {
+            display: none;
+            }
+    }
+    a {
+        color:#777777;
+        text-decoration: none;
+    }
+    a:hover, a:active {
+        color:#003366;
+        text-decoration: none;
+    }
+    .back {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    .copyright {
+        text-align: center;
+    }
+    .clr {
+        clear: both;
+    }
+
+
+    @media (max-width: 600px) {
+        .back {
+            float: none;
+        }
+        .date {
+            float: none;
+        }
+        .body-text p {
+            font-size: 16px;
+        }
+    }
+}

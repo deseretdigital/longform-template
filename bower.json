@@ -1,0 +1,16 @@
+{
+  "name": "canine-veteran-project",
+  "dependencies": {
+    "jquery": "~2.1",
+    "foundation": "~5.4",
+    "normalize-css": "~3.0",
+    "requirejs": "~2.1",
+    "jquery-scrollspy": "",
+    "mobile-detect": "hgoebl/mobile-detect.js#~0.4.2",
+    "jquery-waypoints": "~2.0.5",
+    "hammerjs": "~2.0.4"
+  },
+  "devDependencies": {
+    "gulp": "~3.8"
+  }
+}

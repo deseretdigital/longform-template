@@ -1,0 +1,142 @@
+.inline {
+    margin: 1em 0;
+    .inline-title {
+        margin: 0 0 0 0;
+        font-size: 1.5rem;
+    }
+    .inline-description {
+        font-weight: 300;
+        text-align: left;
+        font-size: 1.25rem;
+    }
+    p.inline-description {
+        margin-top: 0;
+    }
+    .inline-pull-quote {
+        margin: 2em auto;
+        width: 80%;
+        quotes: "\201C""\201D""\2018""\2019";
+    }
+    blockquote.inline-pull-quote::before {
+        content: open-quote;
+        float: left;
+        margin-right: .25rem;
+    }
+    blockquote.inline-pull-quote p:last-child:after {
+        content: close-quote;
+    }
+    .inline-pull-quote .attribution {
+
+    }
+    .inline-pull-quote .attribution:before {
+        content: "\2014\00A0";
+    }
+    @media (min-width: 600px) and (max-width: 1000px) {
+        max-width: 36rem;
+        margin: auto;
+    }
+    @media (min-width: 1000px) {
+        &.inline-right {
+            float: right;
+            margin: 0 0 1em 1em;
+            text-align: right;
+            width: 80%;
+            @media(min-width: 1200px) {
+                &.inline-right-offset {
+                    width: 70%;
+                    margin-right: -20%;
+                }
+            }
+        }
+        &.inline-left {
+            float: left;
+            margin: 0 1em 1em 0;
+            &.inline-left-offset {
+                width: 70%;
+                margin-left: -20%;
+            }
+        }
+        &.inline-right, &.inline-left {
+            width: 60%;
+            padding: 0;
+            .inline-title {
+                text-align: left;
+            }
+            &.inline-chart {
+                padding: 1rem;
+                width: 100%;
+                margin: 0;
+                float: none;
+            }
+        }
+        &.inline-full {
+            padding: 0;
+            clear: both;
+        }
+
+    }
+    &.inline-image {
+        img {
+            width: 100%;
+        }
+        .image-caption {
+            font-size: 0.75em;
+            line-height: 150%;
+            color: white;
+            background: RGBA(0, 0, 0, 0.3);
+            margin: 0;
+            padding: 1rem;
+            text-align: left;
+        }
+    }
+    &.inline-video video {
+        width: 100%;
+    }
+    &.inline-video object {
+        left: 0;
+    }
+    &.inline-pull-quote {
+        font-size: 2rem;
+        padding-left: 3rem;
+    }
+    &.inline-right.inline-pull-quote {
+        padding-left: 3rem;
+        text-align: left;
+    }
+    &.inline-pull-quote .attribution {
+        margin-top: 1em;
+        font-size: 50%;
+        color: #777;
+    }
+    &.inline-chart.inline-left, &.inline-chart.inline-right {
+        padding: 1rem;
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    .inline-chart .chart-title {
+        text-align: left;
+    }
+    .inline-image {
+        padding: 0;
+    }
+    .inline-image-widescreen .parallax-image {
+        min-height: 300px;
+        max-height: 400px;
+        margin: 1rem 0;
+        background-size: contain;
+    }
+    .inline-image .image-caption {
+        font-size: .65em;
+        color: #777;
+    }
+    .inline-full .image-caption {
+        margin: auto;
+    }
+    .gallery-caption {
+        max-width: 100%;
+        margin: 2rem;
+    }
+
+
+}

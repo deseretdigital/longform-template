@@ -1,0 +1,174 @@
+@import "longform";
+@import "normalize";
+@import "glyphicons";
+
+@import url("http://fonts.googleapis.com/css?family=Yeseva+One");
+@import url("http://fonts.googleapis.com/css?family=Lustria|Playfair+Display:400,700,400italic|Oswald:300,400");
+body {
+    background-color: #072233;
+    font-family: 'Lustria';
+    color: white;
+}
+footer {
+    background-color: RGBA(86,29,29,1);
+    color: white;
+    a {
+        color: white;
+        &:hover {
+            color: #eee;
+        }
+    }
+}
+h3 {
+    font-family: 'Playfair Display';
+    font-size: 2rem;
+}
+.glyphicons {
+    color: white;
+    i:before {
+        color: white;
+    }
+}
+
+.large-text, .inline-pull-quote, .inline-title, .subhead, .hammer, .series-title, .pull-quote {
+    font-family: 'Playfair Display', 'Lustria', Georgia, "Times New Roman", serif;
+}
+.inline-video {
+    position: relative;
+}
+.inline-video video, .inline-video object, .inline-video embed, .inline-video .jwplayer {
+    width: 100%;
+    height: 100%;
+}
+.cover {
+    .video-container {
+        background-image:url('../assets/images/liberty-900.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .alternate-image {
+        display: none;
+    }
+    @media (max-width: 760px) {
+        .video-container {
+            display: none;
+        }
+        .alternate-image {
+            display: block;
+            max-width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .overlay {
+        background: RGBA(255,255,255,0.2);
+        height: auto;
+        left: 8rem;
+        top: 1rem;
+        bottom: auto;
+        text-align: left;
+        font-family: "Playfair Display";
+        padding: 2rem;
+        width: 28rem;
+        .overline {
+            text-align: center;
+            font-weight: 400;
+            font-size: 1.25rem;
+            position: relative;
+            .liberty-bell {
+                height: 24px;
+                width: 24px;
+                fill: white;
+                margin-right: .5rem;
+                display: inline-block;
+                position: relative;
+                top: 4px;
+            }
+            span {
+                display: inline-block;
+                position: relative;
+            }
+            @media (min-width: 500px) {
+                span:before, span:after {
+                  content: "";
+                  position: absolute;
+                  height: 5px;
+                  border-bottom: 1px solid white;
+                  top: 10px;
+                  width: 100px;
+                }
+                span:before {
+                  right: 100%;
+                  margin-right: 15px;
+                }
+                span:after {
+                  left: 100%;
+                  margin-left: 15px;
+                }
+            }
+        }
+        h1 {
+            width: 27rem;
+            font-size: 8rem;
+            margin: 0;
+            line-height: 100%;
+            margin-bottom: 1rem;
+        }
+        .sub {
+            width: 27rem;
+            font-size: 2rem;
+            font-weight: normal;
+            margin: 0;
+        }
+        @media (max-width: 760px) {
+            width: 100%;
+            display: block;
+            position: relative;
+            left: auto;
+            top: auto;
+            text-align: center;
+            padding: 1rem 0;
+            h1 {
+                width: 100%;
+                font-size: 3rem;
+                margin: 1rem auto;
+            }
+            .sub {
+                width: 100%;
+                font-size: 1.5rem;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.inline-social {
+    position: absolute; right: 0;
+    @media (max-width: 1000px) {
+        display: block;
+        position: relative;
+        max-width: 36rem;
+        margin: 1rem auto;
+    }
+    @media (max-width: 780px) {
+        max-width: 36rem;
+        margin: 1rem auto 2rem auto;
+        display: block;
+        position: relative;
+        .pw-button {
+            display: inline-block !important;
+            width: auto !important;
+        }
+        .pw-widget {
+            width: auto !important;
+        }
+        .pw-layout-vertical .pw-button {
+            display: inline-block !important;
+            margin-right: 1rem !important;
+        }
+    }
+    @media (max-width: 600px) {
+        padding: 0 1rem;
+    }
+}
